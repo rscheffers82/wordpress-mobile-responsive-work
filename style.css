@@ -1,0 +1,520 @@
+/*
+Theme Name: Iden Ford Photography
+Theme URI:
+Description: A child theme based off of the Thematic Theme Framework
+Author: Andrew Sepic
+Author URI: http://thinkupdesign.ca/
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+
+body {
+	background: url(imgs/bottombg.jpg) repeat top left;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #ccc;
+	font-family: 'Raleway', sans-serif !important;
+}
+
+a:visited {
+	color: #ccc;
+}
+
+.one-half {
+	width: 45%;
+	float: left;
+	display: block;
+	margin-right: 5%;
+}
+
+input[type=submit], .button {
+	background-color: #114170;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 1rem 0;
+  display: inline-block;
+	transition: background-color 0.25s ease;
+	cursor: pointer;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+}
+
+input.acpwd-pass {
+    padding: 1rem;
+}
+
+.acpwd-submit:hover, .button:hover, input[type=submit]:hover {
+	color: #ccc;
+	background-color: #1b548c;
+}
+
+#wrapper {
+	background: url(imgs/topbg.jpg) repeat-x top left;
+	position:absolute;
+	width:100%;
+}
+
+#pageWrap2 {
+	background: url(imgs/contenttop.png) repeat-x top left;
+	width:960px;
+	-webkit-box-shadow: -3px 3px 2px #222;
+-moz-box-shadow: -3px 3px 2px #222;
+box-shadow: -3px 3px 2px #222;
+
+
+}
+#pageWrap {
+	background: url(imgs/contentbottom.png) repeat top left;
+	width:960px;
+	margin: 20px auto;
+}
+
+.navigation a:hover {
+	color: #999999;
+}
+
+/***********   HEADER   *************/
+
+#branding {
+	padding:28px 0 0;
+	width:200px;
+	height:30px;
+	float:left;
+}
+
+#blog-title {
+	width:180px;
+}
+
+#blog-title a {
+	background-image:url(imgs/idenford_logo.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	display:block;
+	text-indent:-9999px;
+	width:161px;
+	height:161px;
+	margin-top:0;
+	margin-left: 5px;
+}
+#blog-description {
+	text-indent: -9999px;
+	height:0px;
+}
+
+#header {
+	width:940px;
+	margin:0 auto;
+
+}
+
+/********    NAVIGATION  **********/
+
+#access {
+	float:right;
+	border-bottom:none;
+	margin: 20px 10px 0 0;
+	width:730px;
+}
+
+.menu ul {
+	float: right;
+}
+
+.menu { width: auto; }
+
+.sf-menu {
+	border-right:none;
+	float:none;
+}
+
+.sf-menu li {
+	background:none;
+
+}
+.sf-menu a,
+.windows .sf-menu a {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#ccc;
+	font-size: 15px;
+	border:none;
+	padding:2px 15px;
+	font-variant:small-caps;
+	border-right:1px solid #ccc;
+}
+
+.sf-menu a:visited {
+	color: #ccc;
+}
+li.last a { border-right: none !important; }
+
+
+.sf-menu a:hover {
+	border-right: 1px solid #999;
+	background-color:#114170;
+	color: #fff;
+}
+
+li.fb {
+
+}
+
+li.fb a {
+	display: block;
+	height: 24px;
+	width: 24px;
+	border-right: 0 !important;
+	text-indent: -9999px;
+	background: url('imgs/facebook.png') no-repeat bottom left;
+	padding: 0 !important;
+	margin-top: -2px;
+}
+
+li.fb a:hover {
+	background: transparent url('imgs/facebook.png') no-repeat top left;
+}
+
+/* Sub Menu */
+
+.sf-menu ul {
+	border-bottom: 1px solid #818181;
+	margin: -12px 0 0;
+}
+
+.sf-menu li li {
+	background: transparent;
+}
+
+.sf-menu .sub-menu li a {
+	background: rgba(51,51,51,0.7);
+	padding: 10px 15px;
+	border-right: 0;
+}
+
+.sf-menu .sub-menu li a:hover {
+	background: #464646;
+	color: #fff;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active  {
+	background: #114170;
+}
+
+
+
+/****************   CONTENT   *************/
+
+#main {
+	padding:20px 0 0;
+	width:750px;
+	float:right;
+	clear:none;
+	min-height:700px;
+}
+
+#content {
+	width:720px;
+	margin:0;
+	padding-bottom: 3rem;
+}
+#container {
+	background: url(imgs/bottombar.png) no-repeat bottom center;
+	width:720px;
+	margin:0 10px;
+
+}
+.entry-content img {
+	max-width:none;
+}
+.entry-content {
+		background: url(imgs/topbar.png) no-repeat top left;
+		padding: 30px 5px 0;
+}
+.entry-title {
+	color:#ccc;
+	line-height:36px;
+	padding: 0 0 10px 0;
+	font-weight:normal;
+
+}
+
+a:link {
+	color:#ccc;
+}
+a:hover {
+	color:#A11526;
+}
+p, ul, ol, dd, pre {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#999;
+}
+
+#content ul {
+	list-style:circle outside none;
+	margin: 0 0 18px 2em;
+	width:250px;
+	float:left;
+}
+
+#content ul li {
+	padding: 2px 0;
+}
+
+
+/** SIDEBAR **/
+
+#guild li { display: block; }
+#guild {
+	color: #ccc;
+	font-family: arial;
+}
+
+#guild li#text-3 {
+	border-left: 3px solid #114171;
+}
+
+.textwidget {
+	padding: 0 0 20px 10px;
+}
+
+.ph {
+	color:#aeaeae;
+	font-size: 26px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.city {
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	padding-left: 6px;
+}
+
+#footer {
+	border:none;
+}
+#siteinfo {
+	padding:22px 30px 24px 0;
+	text-align:right;
+	font-family:Arial, Helvetica, sans-serif;
+	width:930px;
+	font-size: 13px;
+}
+
+#siteinfo a:hover {
+	color:#999999;
+}
+
+.entry-utility {
+	display: none;
+}
+
+/** IMAGE GALLERY STYLING **/
+
+.gallery-item {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*********  CONTACT FORM SYLING **********/
+
+textarea,
+input {
+	border-color: #111111 #555555 #555555 #111111;
+    border-style: solid;
+    border-width: 1px;
+    color: #CCCCCC;
+    font-family:Arial, Helvetica, sans-serif;
+  	background:#444;
+}
+
+div.wpcf7-response-output {
+    color: #999999 !important;
+}
+
+
+/******  TESTIMONIAL STYLING *******/
+
+.page-id-62 #testimonial {
+	border: 1px solid #999;
+  width: 300px;
+	margin: 1rem;
+	-webkit-box-shadow: 2px 2px 2px #1a1a1a;
+	-moz-box-shadow: 2px 2px 2px #1a1a1a;
+	box-shadow: 2px 2px 2px #1a1a1a;
+	padding: 20px 10px 20px 30px;
+}
+
+.page-id-62 #testimonial::before {
+	left: 10px;
+}
+
+.page-id-62 #guild #testimonial {
+	display: none;
+}
+
+#testimonial {
+  color: #999;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  margin: 0 10px 20px 0;
+  padding: 20px 10px;
+	width: 254px;
+	margin: 2rem 0 0 0px;
+	text-shadow: 2px 2px 2px #1a1a1a;
+	filter: dropshadow(color=#1a1a1a, offx=2, offy=2);
+	position: relative;
+}
+
+#testimonial::before {
+	position: absolute;
+	content:"\201C";
+	font-size: 44px;
+	display: block;
+	float: left;
+	top: 29px;
+	left: -6px;
+}
+
+.quotes {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:48px;
+	color:#161616;
+}
+.name {
+	float:left;
+	font-style:italic;
+	font-size:16px;
+	padding:10px 0;
+	color:#999;
+
+}
+
+
+
+/****   HOME PAGE STYLING ***************/
+
+body.page-id-4 .entry-content {
+	padding:0;
+}
+
+body.page-id-4 .entry-content {
+	background:none;
+}
+.hentry {
+	padding:0;
+}
+
+body.page-id-4 .entry-title {
+	height:0;
+	text-indent:-9999px;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+/*************   SLIDE SHOW PORTFOLIO STYLING *************/
+div.slideshow-nav {
+		background: url(imgs/topbar.png) no-repeat bottom left;
+		height: 30px;
+        margin-bottom: 20px;
+}
+
+div.slideshow-nav a {
+		color:#ccc !important;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		text-decoration:none !important;
+}
+
+.sep,
+.slideshow-info {
+	display:none !important;
+}
+
+div.slideshow-nav a.slideshow-next {
+	float:right;
+	width:25px;
+	margin: 0 2px 0 0 !important;
+}
+
+a.play {
+	float:left;
+	margin: 0 15px 0 0;
+}
+a.slideshow-prev,
+a.pause {
+	float:left;
+}
+
+.entry-content img {
+		background:white;
+	-moz-border-radius: 8px;
+border-radius: 8px;
+padding:10px;
+
+}
+
+td img {
+	padding: 5px !important;
+}
+
+.navigation a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background: #114170;
+	color: #fff;
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+.navigation a:hover {
+	background: #123354;
+	color:#fff;
+}
+
+
+#portfolio-slideshow1 {
+	margin-left:35px;
+}
+
+.showloader .portfolio-slideshow {
+    visibility: visible!important;
+}
+
+div.slideshow-wrapper .pscarousel {
+	display: none!important;
+}
+
+/*  Unite Stills */
+
+#request {
+	display: none;
+}
