@@ -518,3 +518,151 @@ div.slideshow-wrapper .pscarousel {
 #request {
 	display: none;
 }
+
+/* 1200px width and responsive styles */
+
+body,
+#pageWrap,
+#pageWrap2 {
+	width: 100%;
+	max-width: 1200px;
+}
+
+#header {
+	padding: 0 20px;
+	width: auto;
+}
+
+/* Logo */
+#branding {
+	padding: 0;
+	width: auto;
+	height: auto;
+	/*float: none;*/
+	border: 1px solid blue;
+	display: inline-block;
+}
+
+#blog-title {
+    width: 100%;
+}
+
+#blog-title a {
+	background-image: url(imgs/idenford_logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	text-indent: -9999px;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+}
+
+/* page content */
+#main{
+	width: 100%;
+	max-width: 900px;
+}
+
+#container {
+	width: 90%;
+	padding: 0;
+	background: none;
+	border-bottom: 2px solid #114070;
+}
+
+#content {
+	width: 100%;
+}
+
+.entry-content {
+	background: linear-gradient(
+		#071c31,
+		#114070 3px,
+		#114070 12px,
+		transparent 13px
+		);
+		border: 1px solid red;
+}
+
+/* */
+.page-id-2 .wp-image-886 {
+	float: none;
+	display: block;
+	margin: 5px auto 20px auto;
+}
+
+/* menu styles */
+#access {
+	width: 80vw;
+	max-width: 900px;
+	border: 1px solid gray;
+}
+
+.menu {
+	width: auto;
+}
+
+.menu ul {
+	float: none;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*
+	body,
+	#pageWrap,
+	#pageWrap2 {
+		max-width: 1200px;
+	}
+
+	#main{
+		max-width: 750px;
+	}
+
+	#access {
+		max-width: 730px;
+	}
+*/
+
+
+
+/* LARGE DEVICES */
+@media all and (max-width: 1200px) {
+	body,
+	#pageWrap,
+	#pageWrap2 {
+		max-width: 960px;
+	}
+	#main {
+		max-width: 750px;
+	}
+	#access {
+		max-width: 690px;
+		margin: 20px 30px 0 0;
+	}
+}
+
+/* MEDIUM DEVICES */
+/*@media all and (min-width: 640px) and (max-width:1024px) {
+	body,
+	#pageWrap,
+	#pageWrap2 {
+		max-width: 960px;
+	}
+	#main{
+		max-width: 750px;
+	}
+	#access {
+		max-width: 730px;
+	}
+}
+
+/* SMALL DEVICES */
+@media all and (max-width: 640px) {
+
+}*/
