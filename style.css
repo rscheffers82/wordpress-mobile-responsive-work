@@ -77,7 +77,7 @@ input.acpwd-pass {
 #wrapper {
 	background: url(imgs/topbg.jpg) repeat-x top left;
 	position:absolute;
-	width:100%;
+	width:auto;
 }
 
 #pageWrap2 {
@@ -521,10 +521,13 @@ div.slideshow-wrapper .pscarousel {
 }
 /* 1200px width and responsive styles */
 
-#pageWrap,
+#pageWrap {
+	width: 94%;
+	max-width: 1200px;
+}
+
 #pageWrap2 {
 	width: 100%;
-	max-width: 1200px;
 }
 
 #header {
@@ -559,15 +562,19 @@ padding: 28px 0 0;
 
 /* page content */
 #main{
-	width: 100%;
-	max-width: 900px;
+	width: 80%;
+	float: right;
+	/*border: 1px solid yellow;*/
 }
 
 #container {
-	width: 90%;
+	width: 96%;
 	padding: 0;
+	margin: 0 auto;
 	background: none;
 	border-bottom: 2px solid #114070;
+	float: none;
+			/*border: 1px solid red;*/
 }
 
 #content {
@@ -581,7 +588,10 @@ padding: 28px 0 0;
 		#114070 12px,
 		transparent 13px
 		);
-		/*border: 1px solid red;*/
+}
+
+.portfolio-slideshow {
+	margin: 20px auto !important;
 }
 
 /* */
@@ -595,8 +605,8 @@ padding: 28px 0 0;
 #access {
 	/*border: 1px solid gray;*/
 	margin: 20px 4% 0 4%;
-	max-width: 900px;
 	width: 75%;
+	float: right;
 }
 
 .menu {
@@ -635,13 +645,13 @@ padding: 28px 0 0;
 @media all and (max-width: 1200px) {
 	#pageWrap,
 	#pageWrap2 {
-		max-width: 960px;
+		/*max-width: 960px;*/
 	}
 	#main {
-		max-width: 750px;
+		/*max-width: 750px;*/
 	}
 	#access {
-		max-width: 690px;
+		/*max-width: 690px;*/
 
 	}
 }
@@ -649,22 +659,22 @@ padding: 28px 0 0;
 /* MEDIUM DEVICES */
 
 @media all and (min-width: 640px) and (max-width:1024px) {
-	#wrapper { width: auto; }
+	/*#wrapper { width: auto; }*/
 
 	body,
 	#pageWrap,
 	#pageWrap2 {
-		max-width: 960px;
 	}
 	#main{
-		max-width: 750px;
 	}
 	#access {
-		max-width: 730px;
 	}
 }
 
 /* SMALL DEVICES */
 @media all and (max-width: 640px) {
-	#wrapper { width: auto; }
+	#pageWrap {
+		width: 100%;
+		margin: 0;
+	}
 }
