@@ -34,6 +34,7 @@ Thematic is © Ian Stewart http://themeshaper.com/
 
 body {
 	background: url(imgs/bottombg.jpg) repeat top left;
+	width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -518,10 +519,8 @@ div.slideshow-wrapper .pscarousel {
 #request {
 	display: none;
 }
-
 /* 1200px width and responsive styles */
 
-body,
 #pageWrap,
 #pageWrap2 {
 	width: 100%;
@@ -535,14 +534,14 @@ body,
 
 /* Logo */
 #branding {
-	padding: 0;
-	width: auto;
-	height: auto;
-	/*float: none;*/
-	border: 1px solid blue;
-	display: inline-block;
+padding: 28px 0 0;
+    width: 150px;
+    float: left;
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-flow: row wrap;
 }
-
+/*
 #blog-title {
     width: 100%;
 }
@@ -556,7 +555,7 @@ body,
 	width: 150px;
 	height: 150px;
 	background-size: cover;
-}
+}*/
 
 /* page content */
 #main{
@@ -582,21 +581,22 @@ body,
 		#114070 12px,
 		transparent 13px
 		);
-		border: 1px solid red;
+		/*border: 1px solid red;*/
 }
 
 /* */
 .page-id-2 .wp-image-886 {
-	float: none;
 	display: block;
+	float: none;
 	margin: 5px auto 20px auto;
 }
 
 /* menu styles */
 #access {
-	width: 80vw;
+	/*border: 1px solid gray;*/
+	margin: 20px 4% 0 4%;
 	max-width: 900px;
-	border: 1px solid gray;
+	width: 75%;
 }
 
 .menu {
@@ -633,7 +633,6 @@ body,
 
 /* LARGE DEVICES */
 @media all and (max-width: 1200px) {
-	body,
 	#pageWrap,
 	#pageWrap2 {
 		max-width: 960px;
@@ -643,12 +642,15 @@ body,
 	}
 	#access {
 		max-width: 690px;
-		margin: 20px 30px 0 0;
+
 	}
 }
 
 /* MEDIUM DEVICES */
-/*@media all and (min-width: 640px) and (max-width:1024px) {
+
+@media all and (min-width: 640px) and (max-width:1024px) {
+	#wrapper { width: auto; }
+
 	body,
 	#pageWrap,
 	#pageWrap2 {
@@ -664,5 +666,5 @@ body,
 
 /* SMALL DEVICES */
 @media all and (max-width: 640px) {
-
-}*/
+	#wrapper { width: auto; }
+}
