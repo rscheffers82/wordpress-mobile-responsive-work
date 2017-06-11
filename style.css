@@ -566,6 +566,7 @@ padding: 28px 0 0;
 .page-id-4 #testimonial {
 	width: 15vw;
 	line-height: 1.25em;
+	max-width: 200px;
 }
 
 #guild {
