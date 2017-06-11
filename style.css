@@ -676,23 +676,20 @@ button#responsive-menu-button {
 
 /* LARGE DEVICES */
 @media all and (max-width: 1200px) {
-	#pageWrap,
-	#pageWrap2 {
-		/*max-width: 960px;*/
-	}
-	#main {
-		/*max-width: 750px;*/
-	}
-	#access {
-		/*max-width: 690px;*/
 
-	}
 }
 
 /* MEDIUM DEVICES */
 @media all and (min-width: 640px) and (max-width:1024px) {
+	#branding {
+		margin-left: -1vw;
+	}
 	.page-id-4 #testimonial {
 		font-size: calc(10px + 1vw);
+	}
+	#content .gallery img {
+		width: 20vw;
+		max-width: 150px;
 	}
 }
 
@@ -722,7 +719,13 @@ button#responsive-menu-button {
 	}
 	#blog-title a {
 		margin: 0 auto;
-		min-width: 75px;
-		min-height: 75px;
+		min-width: 90px;
+		min-height: 90px;
+	}
+	#content .gallery img {
+		width: 22vw;
+	}
+	.entry-title {
+		margin-top: 0.6em;
 	}
 }
