@@ -519,7 +519,13 @@ div.slideshow-wrapper .pscarousel {
 #request {
 	display: none;
 }
-/* 1200px width and responsive styles */
+
+
+
+/* ________________________________________________ */
+/*																						  		*/
+/* 			1200px width and responsive styles 			  	*/
+/* ________________________________________________ */
 
 #pageWrap {
 	width: 94%;
@@ -548,15 +554,32 @@ padding: 28px 0 0;
 }
 
 #blog-title a {
-	width: 13vw;
-	height: 13vw;
+	width: 15vw;
+	height: 15vw;
 	max-width: 161px;
 	max-height: 161px;
 	background-size: cover;
+	margin-bottom: 20px;
 }
 
 .page-id-4 #testimonial {
-	
+	width: 15vw;
+	line-height: 1.25em;
+}
+
+#guild {
+	width: 15vw;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.sf-menu a, .windows .sf-menu a {
+	margin: 0.25em 0;
+}
+
+.sf-menu a {
+	margin-left: 0px;
 }
 
 /* page content */
@@ -646,6 +669,11 @@ padding: 28px 0 0;
 	margin-right: 5%;
 }
 
+button#responsive-menu-button {
+	top: 20px !important;
+	right: 20px !important;
+}
+
 /* LARGE DEVICES */
 @media all and (max-width: 1200px) {
 	#pageWrap,
@@ -663,6 +691,9 @@ padding: 28px 0 0;
 
 /* MEDIUM DEVICES */
 @media all and (min-width: 640px) and (max-width:1024px) {
+	.page-id-4 #testimonial {
+		font-size: calc(10px + 1vw);
+	}
 }
 
 /* SMALL DEVICES */
@@ -675,14 +706,20 @@ padding: 28px 0 0;
 		width: 100%;
 		float: none;
 	}
-
- #branding {
-	 width: auto;
- }
- #blog-title {
-	 width: 100%;
- }
-
+	#header {
+	  height: 90px;
+	}
+	#branding {
+		width: auto;
+	}
+	#blog-title {
+		width: 100%;
+	}
+	.page-id-4 #testimonial,			/* Disable on home */
+	.page-id-231 #guild,					/* Disable on Unit stills */
+	.page-id-5 #guild {  					/* Disable on contact page */
+		display: none;
+	}
 	#blog-title a {
 		margin: 0 auto;
 		min-width: 75px;
