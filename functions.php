@@ -18,11 +18,11 @@ function child_access_menu() {
 add_filter('thematic_menu_type', 'child_access_menu');
 
 // Wp Enqueue Google Fonts
-function add_Fonts(){
+function add_FontsAndScripts(){
   wp_enqueue_style( 'add_Raleway', 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,70', false);
   wp_enqueue_script( 'iden-custom', get_stylesheet_directory_uri() . '/idens.js', array(), '1.0.0', true );
 }
-add_action('wp_enqueue_scripts', 'add_Fonts');
+add_action('wp_enqueue_scripts', 'add_FontsAndScripts');
 
 
 

@@ -76,16 +76,17 @@ input.acpwd-pass {
 
 #wrapper {
 	background: url(imgs/topbg.jpg) repeat-x top left;
-	position:absolute;
-	width:auto;
+	position: absolute;
+	width:100%;
+	/*width:auto;*/
 }
 
 #pageWrap2 {
 	background: url(imgs/contenttop.png) repeat-x top left;
 	width:960px;
 	-webkit-box-shadow: -3px 3px 2px #222;
--moz-box-shadow: -3px 3px 2px #222;
-box-shadow: -3px 3px 2px #222;
+	-moz-box-shadow: -3px 3px 2px #222;
+	box-shadow: -3px 3px 2px #222;
 
 
 }
@@ -419,7 +420,6 @@ div.wpcf7-response-output {
 }
 
 
-
 /****   HOME PAGE STYLING ***************/
 
 body.page-id-4 .entry-content {
@@ -533,6 +533,8 @@ div.slideshow-wrapper .pscarousel {
 #header {
 	padding: 0 20px;
 	width: auto;
+	display: flex;
+	flex-flow: row-reverse nowrap;
 }
 
 /* Logo */
@@ -544,21 +546,18 @@ padding: 28px 0 0;
     display: flex;
     flex-flow: row wrap;
 }
-/*
-#blog-title {
-    width: 100%;
-}
 
 #blog-title a {
-	background-image: url(imgs/idenford_logo.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	display: flex;
-	text-indent: -9999px;
-	width: 150px;
-	height: 150px;
+	width: 13vw;
+	height: 13vw;
+	max-width: 161px;
+	max-height: 161px;
 	background-size: cover;
-}*/
+}
+
+.page-id-4 #testimonial {
+	
+}
 
 /* page content */
 #main{
@@ -639,7 +638,13 @@ padding: 28px 0 0;
 	}
 */
 
+#post-62 ul {
+	width: 40%;
+}
 
+#post-62 ul:first-child {
+	margin-right: 5%;
+}
 
 /* LARGE DEVICES */
 @media all and (max-width: 1200px) {
@@ -657,18 +662,7 @@ padding: 28px 0 0;
 }
 
 /* MEDIUM DEVICES */
-
 @media all and (min-width: 640px) and (max-width:1024px) {
-	/*#wrapper { width: auto; }*/
-
-	body,
-	#pageWrap,
-	#pageWrap2 {
-	}
-	#main{
-	}
-	#access {
-	}
 }
 
 /* SMALL DEVICES */
@@ -676,5 +670,22 @@ padding: 28px 0 0;
 	#pageWrap {
 		width: 100%;
 		margin: 0;
+	}
+	#main{
+		width: 100%;
+		float: none;
+	}
+
+ #branding {
+	 width: auto;
+ }
+ #blog-title {
+	 width: 100%;
+ }
+
+	#blog-title a {
+		margin: 0 auto;
+		min-width: 75px;
+		min-height: 75px;
 	}
 }
