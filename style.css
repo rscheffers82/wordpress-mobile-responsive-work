@@ -712,4 +712,7 @@ button#responsive-menu-button {
 	.client-column {
 		width: 95%;
 	}
+	#responsive-menu-wrapper {
+		padding-top: 15px !important;
+	}
 }
