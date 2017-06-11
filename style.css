@@ -277,18 +277,6 @@ p, ul, ol, dd, pre {
 	color:#999;
 }
 
-#content ul {
-	list-style:circle outside none;
-	margin: 0 0 18px 2em;
-	width:250px;
-	float:left;
-}
-
-#content ul li {
-	padding: 2px 0;
-}
-
-
 /** SIDEBAR **/
 
 #guild li { display: block; }
@@ -363,6 +351,17 @@ div.wpcf7-response-output {
 
 /******  TESTIMONIAL STYLING *******/
 
+.page-id-62 .entry-content {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.client-column {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+
 .page-id-62 #testimonial {
 	border: 1px solid #999;
   width: 300px;
@@ -371,6 +370,8 @@ div.wpcf7-response-output {
 	-moz-box-shadow: 2px 2px 2px #1a1a1a;
 	box-shadow: 2px 2px 2px #1a1a1a;
 	padding: 20px 10px 20px 30px;
+	width: 95%;
+	max-width: 300px;
 }
 
 .page-id-62 #testimonial::before {
@@ -621,6 +622,8 @@ padding: 28px 0 0;
 	display: block;
 	float: none;
 	margin: 5px auto 20px auto;
+	width: 95%;
+	max-width: 683px;
 }
 
 /* menu styles */
@@ -644,31 +647,6 @@ padding: 28px 0 0;
 	align-items: center;
 }
 
-
-/*
-	body,
-	#pageWrap,
-	#pageWrap2 {
-		max-width: 1200px;
-	}
-
-	#main{
-		max-width: 750px;
-	}
-
-	#access {
-		max-width: 730px;
-	}
-*/
-
-#post-62 ul {
-	width: 40%;
-}
-
-#post-62 ul:first-child {
-	margin-right: 5%;
-}
-
 button#responsive-menu-button {
 	top: 20px !important;
 	right: 20px !important;
@@ -690,6 +668,9 @@ button#responsive-menu-button {
 	#content .gallery img {
 		width: 20vw;
 		max-width: 150px;
+	}
+	.client-column {
+		width: 95%;
 	}
 }
 
@@ -727,5 +708,8 @@ button#responsive-menu-button {
 	}
 	.entry-title {
 		margin-top: 0.6em;
+	}
+	.client-column {
+		width: 95%;
 	}
 }
