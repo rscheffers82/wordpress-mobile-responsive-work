@@ -311,7 +311,7 @@ p, ul, ol, dd, pre {
 	text-align:right;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 13px;
-	width: 100%;
+	width: auto;
 }
 
 #siteinfo a:hover {
@@ -688,6 +688,9 @@ button#responsive-menu-button {
 	}
 	#blog-title {
 		width: 100%;
+	}	
+	body.page-id-4 .entry-content {
+	  padding-top: 1.25em;
 	}
 	.page-id-4 #testimonial,			/* Disable on home */
 	.page-id-231 #guild,					/* Disable on Unit stills */
