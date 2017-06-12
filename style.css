@@ -233,7 +233,8 @@ li.fb a:hover {
 	width:750px;
 	float:right;
 	clear:none;
-	min-height:700px;
+	/*min-height:700px;*/
+	min-height:81vh;
 }
 
 #content {
@@ -625,7 +626,6 @@ padding: 28px 0 0;
 
 /* menu styles */
 #access {
-	/*border: 1px solid gray;*/
 	margin: 20px 4% 0 4%;
 	width: 75%;
 	float: right;
@@ -649,13 +649,8 @@ button#responsive-menu-button {
 	right: 20px !important;
 }
 
-/* LARGE DEVICES */
-@media all and (max-width: 1200px) {
-
-}
-
 /* MEDIUM DEVICES */
-@media all and (min-width: 640px) and (max-width:1024px) {
+@media all and (min-width: 641px) and (max-width:1024px) {
 	#branding {
 		margin-left: -1vw;
 	}
@@ -668,6 +663,10 @@ button#responsive-menu-button {
 	}
 	.client-column {
 		width: 95%;
+	}
+	textarea, input[type="text"] {
+		width: 98%;
+		padding: 0;
 	}
 }
 
@@ -715,5 +714,10 @@ button#responsive-menu-button {
 
 	.siteinfo {
 		width: 80%;
+	}
+
+	textarea, input {
+		width: 98%;
+		padding: 0;
 	}
 }
