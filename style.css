@@ -136,7 +136,7 @@ input.acpwd-pass {
 #access {
 	float:right;
 	border-bottom:none;
-	margin: 20px 10px 0 0;
+	margin: 20px 0 0 0;
 	width:730px;
 }
 
@@ -627,7 +627,6 @@ padding: 28px 0 0;
 
 /* menu styles */
 #access {
-	margin: 20px 4% 0 4%;
 	width: 75%;
 	float: right;
 }
@@ -637,7 +636,6 @@ padding: 28px 0 0;
 }
 
 .menu ul {
-	float: none;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
@@ -714,10 +712,6 @@ button#responsive-menu-button {
 	}
 	#responsive-menu-wrapper {
 		padding-top: 15px !important;
-	}
-
-	.siteinfo {
-		width: 80%;
 	}
 
 	textarea, input {
