@@ -67,8 +67,7 @@ if (apply_filters('thematic_open_wrapper', true)) {
 
     ?>
      <div id="pageWrap">
-     <div id="pageWrap2">
-    <div id="header">
+       <div id="header">
 
         <?php
 
@@ -77,11 +76,11 @@ if (apply_filters('thematic_open_wrapper', true)) {
 
         ?>
 
-	</div><!-- #header-->
-    <?php
+    	</div><!-- #header-->
+        <?php
 
-    // action hook for placing content below the theme header
-    thematic_belowheader();
+      // action hook for placing content below the theme header
+      thematic_belowheader();
 
-    ?>
-    <div id="main">
+      ?>
+      <div id="main">

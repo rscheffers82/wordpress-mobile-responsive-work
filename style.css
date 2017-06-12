@@ -81,19 +81,15 @@ input.acpwd-pass {
 	/*width:auto;*/
 }
 
-#pageWrap2 {
-	background: url(imgs/contenttop.png) repeat-x top left;
-	width:960px;
+#pageWrap {
+	max-width: 1200px;
+	margin: 20px auto;
+	background-image: url(imgs/contenttop.png), url(imgs/contentbottom.png);
+	background-repeat: repeat-x, repeat;
+	background-position: top left;
 	-webkit-box-shadow: -3px 3px 2px #222;
 	-moz-box-shadow: -3px 3px 2px #222;
 	box-shadow: -3px 3px 2px #222;
-
-
-}
-#pageWrap {
-	background: url(imgs/contentbottom.png) repeat top left;
-	width:960px;
-	margin: 20px auto;
 }
 
 .navigation a:hover {
@@ -313,8 +309,8 @@ p, ul, ol, dd, pre {
 	padding:22px 30px 24px 0;
 	text-align:right;
 	font-family:Arial, Helvetica, sans-serif;
-	width:930px;
 	font-size: 13px;
+	width: 100%;
 }
 
 #siteinfo a:hover {
@@ -715,5 +711,9 @@ button#responsive-menu-button {
 	}
 	#responsive-menu-wrapper {
 		padding-top: 15px !important;
+	}
+
+	.siteinfo {
+		width: 80%;
 	}
 }
