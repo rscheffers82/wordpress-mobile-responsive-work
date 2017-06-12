@@ -295,6 +295,7 @@ p, ul, ol, dd, pre {
 	font-size: 26px;
 	margin-bottom: 10px;
 	display: inline-block;
+	line-height: 1.25em;
 }
 
 .city {
@@ -688,7 +689,7 @@ button#responsive-menu-button {
 	}
 	#blog-title {
 		width: 100%;
-	}	
+	}
 	body.page-id-4 .entry-content {
 	  padding-top: 1.25em;
 	}
